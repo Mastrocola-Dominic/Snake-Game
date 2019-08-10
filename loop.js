@@ -3,14 +3,16 @@ let ctx = canvas.getContext('2d');
 
 var x = canvas.width/2;
 var y = canvas.width/2;
+var col = Math.floor(canvas.height / 20);
+var row = Math.floor(canvas.width / 20);
 
 var dx = 2;
 var dy = -2;
 
 var ballRadius = 10;
 
-var snake = new Snake(canvas.width/2, canvas.height/2, 1, -1, canvas);
-var apple = new Apple(canvas.width - 50, canvas.height/2);
+var snake = new Snake(canvas.width/2, canvas.height/2, 1, 0, canvas);
+var apple = new Apple(canvas.width - 60, canvas.height/2);
 
 
 //Gets input
