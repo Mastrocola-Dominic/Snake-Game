@@ -1,10 +1,11 @@
 function Apple(x, y) {
   this.x = x;
   this.y = y;
-  this.size = 10;
+  this.size = 20;
 
-  this.checkCollisions = function() {
-    
+  this.getNewPos = function() {
+    this.x = Math.floor(Math.random() * row) * 20;
+    this.y = Math.floor(Math.random() * col) * 20;
   }
   this.draw = function(ctx) {
     ctx.fillStyle = '#f00';
